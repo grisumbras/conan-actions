@@ -1,0 +1,11 @@
+import package ;
+
+
+project mypackage ;
+
+
+exe app : main.cpp ;
+
+
+package.install install mypackage : : app ;
+explicit install ;
