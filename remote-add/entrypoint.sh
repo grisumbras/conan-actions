@@ -5,10 +5,17 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 
+echo CONAN_REMOTES=$CONAN_REMOTES
+
+remotes=$CONAN_REMOTES
+CONAN_REMOTES=
+
+conan remote list
+
 i=1
 old_ifs=$IFS
 IFS=,
-for r in $CONAN_REMOTES; do
+for r in $remotes; do
   name=$(echo "$r" | cut -d@ -f 1)
   : ${name:=env_remote_$i}
   i=$(($i+1))
