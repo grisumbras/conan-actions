@@ -19,6 +19,7 @@ for r in $CONAN_REMOTES; do
   uri=$(echo "$r" | cut -d@ -f 3)
   : ${uri=$r}
 
+  echo adding remote $name "($uri)"
   conan remote add "$name" "$uri" "$verify"
 done
 IFS=$old_ifs
