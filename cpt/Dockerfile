@@ -10,6 +10,8 @@ LABEL "repository"="http://github.com/grisumbras/conan-actions"
 LABEL "maintainer"="Dmitry Arkhipov <grisumbras@gmail.com>"
 
 
+RUN pip install conan conan-package-tools -U
+
 USER root
 
 ADD entrypoint.sh /entrypoint.sh

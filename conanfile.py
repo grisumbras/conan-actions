@@ -4,7 +4,7 @@ from conans import (
 )
 
 
-b2 = python_requires("b2-helper/0.2.0@grisumbras/testing")
+b2 = python_requires("b2-helper/0.3.1@grisumbras/stable")
 
 
 class MyPackage(b2.B2.Mixin, ConanFile):
