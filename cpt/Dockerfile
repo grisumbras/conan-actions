@@ -1,4 +1,4 @@
-FROM conanio/gcc8 AS base
+FROM conanio/gcc8:1.17.0 AS base
 
 LABEL "com.github.actions.name"="conan-actions-cpt"
 LABEL "com.github.actions.description"="GitHub Actions for using conan_package_tools"
