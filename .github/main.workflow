@@ -20,6 +20,6 @@ workflow "conan remote add" {
 action "conan-remote-add" {
   uses = "./remote-add/"
   env = {
-    remotes = "binc@@https://api.bintray.com/conan/bincrafters/public-conan, gris@@https://api.bintray.com/conan/grisumbras/conan"
+    CONAN_REMOTES = "binc@@https://api.bintray.com/conan/bincrafters/public-conan, gris@@https://api.bintray.com/conan/grisumbras/conan"
   }
 }
