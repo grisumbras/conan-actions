@@ -16,6 +16,6 @@ action "run-cpt" {
 action "run-conan-remote-add" {
   uses = "./remote-add/"
   env = {
-    CONAN_REMOTES = "binc@@https://api.bintray.com/conan/bincrafters/public-conan, gris@@https://api.bintray.com/conan/grisumbras/conan"
+    remotes = "binc@@https://api.bintray.com/conan/bincrafters/public-conan, gris@@https://api.bintray.com/conan/grisumbras/conan"
   }
 }
