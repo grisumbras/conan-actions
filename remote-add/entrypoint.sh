@@ -15,11 +15,6 @@ for r in $CONAN_REMOTES; do
 
   verify=$(echo "$r" | cut -d@ -f 2)
   : ${verify:=True}
-  if [ "$verify" = True ]; then
-    verify=verify_ssl
-  else
-    verify=
-  fi
 
   uri=$(echo "$r" | cut -d@ -f 3)
   : ${uri=$r}
