@@ -5,10 +5,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 
-echo CONAN_REMOTES=$CONAN_REMOTES
-
-remotes=$CONAN_REMOTES
-CONAN_REMOTES=
+echo remotes=$remotes
 
 conan remote list
 
